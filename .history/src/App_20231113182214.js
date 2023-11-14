@@ -1,5 +1,4 @@
 import { ThemeProvider } from "styled-components";
-
 import { GlobalStyles } from "./styles/GlobalStyles";
 import { light } from "./styles/Theme";
 
