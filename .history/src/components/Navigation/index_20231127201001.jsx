@@ -15,12 +15,11 @@ export function Navigation() {
           <li>Team</li>
           <li>Faq</li>
         </Menu>
-          <Button
-            text="Connect Wallet"
-            link="
-          https://google.com"
-          />
+        <Button 
+          text='Connect Wallet'
+          link='https://google.com'
+        />
       </NavBar>
-    </Section>
-  );
+      </Section>
+  )
 }

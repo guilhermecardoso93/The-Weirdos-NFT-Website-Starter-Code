@@ -29,14 +29,14 @@ export const Menu = styled.ul`
     &::after {
       content: '';
       display: block;
-      width: 0%;
+      width: 100%;
       height: 2px;
       background-color: ${props => props.theme.text};
       transition: width 0.3 ease;
     }
 
     &:hover::after {
-      width: 100%;
+      
     }
   }
 `
