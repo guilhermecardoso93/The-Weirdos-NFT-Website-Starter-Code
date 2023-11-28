@@ -3,7 +3,7 @@ import { ThemeProvider } from "styled-components";
 import { GlobalStyles } from "./styles/GlobalStyles";
 import { light } from "./styles/Theme";
 
-import { Navigation } from "./components/Navigation";
+import { Navigation } from "./Navigation";
 import { Home } from "./sections/Home";
 import { About } from "./sections/About";
 import { Roadmap } from "./sections/Roadmap";
