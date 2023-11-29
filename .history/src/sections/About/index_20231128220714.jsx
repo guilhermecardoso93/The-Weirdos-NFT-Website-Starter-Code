@@ -1,5 +1,5 @@
 import { ThemeProvider } from "styled-components";
-import { dark } from "../../styles/Theme";
+import { dark } from "../styles/Themes";
 
 import { Carousel } from "../../components/Carousel";
 import { Button } from "../../components/Button";

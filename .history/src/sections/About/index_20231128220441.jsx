@@ -1,6 +1,3 @@
-import { ThemeProvider } from "styled-components";
-import { dark } from "../../styles/Theme";
-
 import { Carousel } from "../../components/Carousel";
 import { Button } from "../../components/Button";
 import {
@@ -35,9 +32,7 @@ export function About() {
             utilities.
           </SubTitleText>
           <ButtonContainer>
-          <ThemeProvider theme={dark}>
-              <Button text={"JOIN OUR DISCORD"} link="#discord" />
-            </ThemeProvider>
+            <Button text={"JOIN OUR DISCORD"} link="#discord" />
           </ButtonContainer>
         </Box>
       </Container>
