@@ -1,6 +1,6 @@
-import styled, { keyframes } from "styled-components";
+import styled,  { keyframes }  from "styled-components";
 
-export const Section = styled.section `
+export const Section = styled.section`
   min-height: ${(props) => `calc(100vh - ${props.theme.navHeight})`};
   width: 100vw;
   position: relative;

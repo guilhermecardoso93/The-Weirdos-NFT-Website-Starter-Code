@@ -14,7 +14,9 @@ export function Home() {
           <CoverVideo />
         </Box>
         <Round>
-          <Circle>&#x2193;</Circle>
+          <Circle>
+            &#x2193;
+          </Circle>
           <img src={RoundTextBlack} alt="NFT" />
         </Round>
       </Container>
