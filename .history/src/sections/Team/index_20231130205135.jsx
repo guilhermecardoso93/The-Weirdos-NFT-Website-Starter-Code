@@ -1,4 +1,3 @@
-import { ConfettiEffect } from "../../components/Confeti";
 import {
   Section,
   Title,
@@ -19,9 +18,21 @@ import img07 from "../../assets/Nfts/bighead-6.svg";
 import img08 from "../../assets/Nfts/bighead-7.svg";
 import img09 from "../../assets/Nfts/bighead-8.svg";
 import img10 from "../../assets/Nfts/bighead-9.svg";
+import { ConfettiEffect } from "../../components/Confeti";
 
+function MemberComponent({ imagem, name = "", position = "" }) {
+  return (
+    <Item>
+      <ImageContainer>
+        <img src={imagem} alt={name} />
+      </ImageContainer>
+      <Name>{name}</Name>
+      <Position>{position}</Position>
+    </Item>
+  );
+}
 
-export function Team() {
+export function Team(imagem, name = "", position = "") {
   const imagens = [
     { img: img01, name: "Skyblaze", position: "Founder" },
     { img: img02, name: "Megnum", position: "Co Founder" },

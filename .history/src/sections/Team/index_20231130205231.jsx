@@ -21,7 +21,19 @@ import img09 from "../../assets/Nfts/bighead-8.svg";
 import img10 from "../../assets/Nfts/bighead-9.svg";
 
 
-export function Team() {
+function MemberComponent({ imagem, name = "", position = "" }) {
+  return (
+    <Item>
+      <ImageContainer>
+        <img src={imagem} alt={name} />
+      </ImageContainer>
+      <Name>{name}</Name>
+      <Position>{position}</Position>
+    </Item>
+  );
+}
+
+export function Team(imagem, name = "", position = "") {
   const imagens = [
     { img: img01, name: "Skyblaze", position: "Founder" },
     { img: img02, name: "Megnum", position: "Co Founder" },
