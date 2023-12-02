@@ -49,13 +49,4 @@ export const Subtitle = styled.h2`
   color: ${(props) => `rgba(${props.theme.textRgba}),0.6`};
   font-weight: 600;
   margin-bottom: 1rem;
-
-  @media (max-width: 40em) {
-    font-size: ${(props) => props.theme.fontmd};
-  }
-
-  @media (max-width: 48em) {
-    align-self: center;
-    text-align: center;
-  }
 `;

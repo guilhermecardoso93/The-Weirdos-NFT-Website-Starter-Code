@@ -31,15 +31,6 @@ export function Navigation() {
           <ListItem onClick={() => scrollTo("showcase")}>Showcase</ListItem>
           <ListItem onClick={() => scrollTo("team")}>Team</ListItem>
           <ListItem onClick={() => scrollTo("faq")}>Faqs</ListItem>
-          <ListItem>
-            <div className="mobile">
-              <Button
-                text="Connect Wallet"
-                link="
-          https://google.com"
-              />
-            </div>
-          </ListItem>
         </Menu>
         <div className="desktop">
           <Button

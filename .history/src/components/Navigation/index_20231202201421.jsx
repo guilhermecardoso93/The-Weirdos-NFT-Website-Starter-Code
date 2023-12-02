@@ -34,20 +34,17 @@ export function Navigation() {
           <ListItem>
             <div className="mobile">
               <Button
-                text="Connect Wallet"
-                link="
-          https://google.com"
+                text="View on Github"
+                link="https://github.com/israelmitolu"
               />
             </div>
           </ListItem>
         </Menu>
-        <div className="desktop">
-          <Button
-            text="Connect Wallet"
-            link="
+        <Button
+          text="Connect Wallet"
+          link="
           https://google.com"
-          />
-        </div>
+        />
       </NavBar>
     </Section>
   );

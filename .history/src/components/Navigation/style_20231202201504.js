@@ -13,27 +13,12 @@ export const NavBar = styled.nav`
   width: 85%;
   height: ${(props) => props.theme.navHeight};
   margin: 0 auto;
-
-  .mobile {
-    display: none
-  }
-
-  @media(max-width: 64em){
-    .desktop {
-      display: none;
-    }
-
-    .mobile {
-      display: inline-block;
-    }
-  }
 `;
 
 export const Menu = styled.ul`
   display: flex;
   justify-content: space-between;
   align-items: center;
-  list-style: none;
 
   @media (max-width: 64em) {
     /* 1024px */

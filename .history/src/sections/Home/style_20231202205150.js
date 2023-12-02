@@ -60,6 +60,7 @@ export const Round = styled.div`
     animation: ${rotate} 6s linear infinite reverse;
   }
 
+  
   @media (max-width: 64em) {
     width: 4rem;
     height: 4rem;
@@ -87,14 +88,4 @@ export const Circle = styled.span`
   left: 50%;
   transform: translate(-50%, -50%);
   font-size: ${(props) => props.theme.fontxl};
-
-  @media (max-width: 64em) {
-    width: 2rem;
-    height: 2rem;
-    font-size: ${(props) => props.theme.fontlg};
-  }
-
-  @media (max-width: 48em) {
-    right: 1rem;
-  }
 `;
