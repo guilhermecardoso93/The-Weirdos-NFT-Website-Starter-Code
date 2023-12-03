@@ -5,6 +5,10 @@ export const Section = styled.section`
   width: 100vw;
   background-color: ${(props) => props.theme.body};
   position: relative;
+
+  @media (max-width: 64em) {
+    width: 80%;
+  }
 `;
 
 export const Title = styled.h1`
@@ -16,17 +20,6 @@ export const Title = styled.h1`
   width: fit-content;
 `;
 
-export const SubTitle = styled.span`
-  display: block;
-  font-size: ${(props) => props.theme.fontxl};
-  text-transform: capitalize;
-  color: ${(props) => props.theme.text};
-
-  @media (max-width: 40em) {
-    font-size: ${(props) => props.theme.fontlg};
-  }
-`;
-
 export const Box = styled.p`
   height: fit-content;
   background-color: ${(props) => props.theme.carouselColor};
@@ -36,23 +29,24 @@ export const Box = styled.p`
   border: 1px solid ${(props) => props.theme.text};
 `;
 
-
+export const SubTitle = styled.span`
+  display: block;
+  font-size: ${(props) => props.theme.fontxl};
+  text-transform: capitalize;
+  color: ${(props) => props.theme.text};
+`;
 
 export const Text = styled.span`
   display: block;
   font-size: ${(props) => props.theme.fontsm};
-  font-weight: 400;
-  margin: 0.5rem 0rem;
   text-transform: capitalize;
   color: ${(props) => props.theme.text};
-
-  @media (max-width: 40em) {
-    font-size: ${(props) => props.theme.fontxs};
-  }
+  font-weight: 400;
+  margin: 0.5rem 0;
 `;
 
 export const Container = styled.div`
- width: 70%;
+  width: 70%;
   height: 200vh;
   background-color: ${(props) => props.theme.body};
   margin: 0 auto;
@@ -60,14 +54,6 @@ export const Container = styled.div`
   justify-content: center;
   align-items: center;
   position: relative;
-
-  @media (max-width: 64em) {
-    width: 80%;
-  }
-
-  @media (max-width: 48em) {
-    width: 90%;
-  }
 `;
 
 export const SvgContainer = styled.div`
@@ -77,54 +63,32 @@ export const SvgContainer = styled.div`
 `;
 
 export const Items = styled.ul`
+  list-style: none;
   width: 100%;
   height: 100%;
   display: flex;
+  align-items: center;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
-
-  @media (max-width: 48em) {
-    width: 90%;
-  }
 
   & > *:nth-of-type(2n + 1) {
     justify-content: start;
 
-    @media (max-width: 48em) {
-      justify-content: center;
-    }
-
     div {
       border-radius: 50px 0 50px 0;
       text-align: right;
-
-      @media (max-width: 48em) {
-        border-radius: 0 50px 0 50px;
-        text-align: left;
-
-        p {
-          border-radius: 0 40px 0 40px;
-        }
-      }
     }
     p {
       border-radius: 40px 0 40px 0;
     }
   }
-
   & > *:nth-of-type(2n) {
     justify-content: end;
-
-    @media (max-width: 48em) {
-      justify-content: center;
-    }
 
     div {
       border-radius: 0 50px 0 50px;
       text-align: left;
     }
-
     p {
       border-radius: 0 40px 0 40px;
     }
@@ -135,10 +99,6 @@ export const Item = styled.li`
   width: 100%;
   height: 100%;
   display: flex;
-
-  @media (max-width: 48em) {
-    justify-content: flex-end !important;
-  }
 `;
 
 export const ItemContainer = styled.div`
@@ -146,8 +106,4 @@ export const ItemContainer = styled.div`
   height: fit-content;
   padding: 1rem;
   border: 3px solid ${(props) => props.theme.text};
-
-  @media (max-width: 48em) {
-    width: 70%;
-  }
 `;

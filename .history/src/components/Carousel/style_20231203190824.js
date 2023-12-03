@@ -13,22 +13,16 @@ export const Container = styled.div`
   @media (max-width: 64em) {
     height: 50vh;
     width: 30vw;
-    justify-content: center;
-    align-items: center;
   }
 
   @media (max-width: 48em) {
     height: 50vh;
     width: 40vw;
-    justify-content: center;
-    align-items: center;
   }
 
   @media (max-width: 30em) {
     height: 45vh;
     width: 60vw;
-    justify-content: center;
-    align-items: center;
   }
 
   .swiper {
@@ -88,6 +82,8 @@ export const Container = styled.div`
 
       @media (max-width: 64em) {
         width: 3rem;
+        justify-content: center;
+        align-items: center;
       }
 
       @media (max-width: 30em) {

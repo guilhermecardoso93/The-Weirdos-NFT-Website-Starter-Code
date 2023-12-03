@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const Section = styled.section`
-  min-height: 100vh;
+ min-height: 100vh;
   width: 100vw;
   background-color: ${(props) => props.theme.body};
   position: relative;
@@ -16,6 +16,15 @@ export const Title = styled.h1`
   width: fit-content;
 `;
 
+export const Box = styled.p`
+  height: fit-content;
+  background-color: ${(props) => props.theme.carouselColor};
+  color: ${(props) => props.theme.text};
+  padding: 1rem;
+  position: relative;
+  border: 1px solid ${(props) => props.theme.text};
+`;
+
 export const SubTitle = styled.span`
   display: block;
   font-size: ${(props) => props.theme.fontxl};
@@ -26,17 +35,6 @@ export const SubTitle = styled.span`
     font-size: ${(props) => props.theme.fontlg};
   }
 `;
-
-export const Box = styled.p`
-  height: fit-content;
-  background-color: ${(props) => props.theme.carouselColor};
-  color: ${(props) => props.theme.text};
-  padding: 1rem;
-  position: relative;
-  border: 1px solid ${(props) => props.theme.text};
-`;
-
-
 
 export const Text = styled.span`
   display: block;
@@ -52,7 +50,7 @@ export const Text = styled.span`
 `;
 
 export const Container = styled.div`
- width: 70%;
+  width: 70%;
   height: 200vh;
   background-color: ${(props) => props.theme.body};
   margin: 0 auto;
@@ -60,14 +58,6 @@ export const Container = styled.div`
   justify-content: center;
   align-items: center;
   position: relative;
-
-  @media (max-width: 64em) {
-    width: 80%;
-  }
-
-  @media (max-width: 48em) {
-    width: 90%;
-  }
 `;
 
 export const SvgContainer = styled.div`

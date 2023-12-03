@@ -4,7 +4,6 @@ import Arrow from "../../assets/Arrow.svg";
 export const Container = styled.div`
   width: 25vw;
   height: 70vh;
-  padding-top: 2rem;
 
   @media (max-width: 70em) {
     height: 60vh;
@@ -13,22 +12,16 @@ export const Container = styled.div`
   @media (max-width: 64em) {
     height: 50vh;
     width: 30vw;
-    justify-content: center;
-    align-items: center;
   }
 
   @media (max-width: 48em) {
     height: 50vh;
     width: 40vw;
-    justify-content: center;
-    align-items: center;
   }
 
   @media (max-width: 30em) {
     height: 45vh;
     width: 60vw;
-    justify-content: center;
-    align-items: center;
   }
 
   .swiper {
@@ -45,7 +38,7 @@ export const Container = styled.div`
       img {
         display: block;
         width: 100%;
-        height: 80%;
+        height: auto;
         object-fit: cover;
       }
     }

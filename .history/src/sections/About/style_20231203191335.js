@@ -43,7 +43,6 @@ export const Container = styled.div`
 export const Box = styled.div`
   width: 50%;
   height: 100%;
-  min-height: 60vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -51,6 +50,13 @@ export const Box = styled.div`
 
   @media (max-width: 40em) {
     min-height: 50vh;
+    justify-content: center;
+    align-items: center;
+  }
+
+  @media (max-width: 64em) {
+    justify-content: center;
+    align-items: center;
   }
 `;
 
@@ -126,12 +132,11 @@ export const ButtonContainer = styled.div`
   width: 80%;
   align-self: flex-start;
   margin: 1rem auto;
-  display: flex;
 
   @media (max-width: 64em) {
     width: 100%;
-    button {
+     button {
       margin: 0 auto;
-    }
+     }
   }
 `;

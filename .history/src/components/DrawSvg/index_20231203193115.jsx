@@ -18,19 +18,19 @@ const VectorContainer = styled.div`
     width: 100%;
     height: 100%;
   }
-
-  @media (max-width: 48em) {
-    left: 1rem;
-  }
 `;
 
 const Bounce = keyframes`
   from {transform: translateX(-50%) scale(0.5);}
   to {transform: translateX(-50%) scale(1);}
+
+  @media (max-width: 40em) {
+    font-size: ${(props) => props.theme.fontxl}
+  }
 `;
 
 const Ball = styled.div`
-  position: absolute;
+ position: absolute;
   top: 0rem;
   left: 50%;
   transform: translateX(-50%);
@@ -50,7 +50,6 @@ export function DrawSvg() {
   const BallRef = useRef(null);
 
   gsap.registerPlugin(ScrollTrigger);
-
   useLayoutEffect(() => {
     let element = ref.current;
 
@@ -58,10 +57,9 @@ export function DrawSvg() {
 
     const length = svg.getTotalLength();
 
-    //Start positioning of Svg Drawing
+    //start positioning of svg drawing
     svg.style.strokeDasharray = length;
-
-    //Hide svg before scrolling starts
+    //hide svg before scrolling start
     svg.style.strokeDashoffset = length;
 
     let t1 = gsap.timeline({
@@ -72,21 +70,21 @@ export function DrawSvg() {
         onUpdate: (self) => {
           const draw = length * self.progress;
 
-          // Also reverse the drawing when scrolling up
+          //also reverse the drawing when scroll goes up
           svg.style.strokeDashoffset = length - draw;
         },
         onToggle: (self) => {
           if (self.isActive) {
-            BallRef.current.style.display = "none";
+            BallRef.current.style.display = "none"
           } else {
-            BallRef.current.style.display = "inline-block";
+            BallRef.current.style.display = "inline-block"
           }
         },
       },
     });
 
     return () => {
-      if (t1) t1.kill();
+      if(t1) t1.kill();
     };
   }, []);
 

@@ -14,7 +14,7 @@ export const Section = styled.section`
 `;
 
 export const Container = styled.div`
-  width: 75%;
+   width: 75%;
   margin: 0 auto;
   display: flex;
   justify-content: center;
@@ -41,7 +41,7 @@ export const Container = styled.div`
 `;
 
 export const Box = styled.div`
-  width: 50%;
+  idth: 50%;
   height: 100%;
   min-height: 60vh;
   display: flex;

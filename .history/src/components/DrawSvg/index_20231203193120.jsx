@@ -18,15 +18,13 @@ const VectorContainer = styled.div`
     width: 100%;
     height: 100%;
   }
-
-  @media (max-width: 48em) {
-    left: 1rem;
-  }
 `;
 
 const Bounce = keyframes`
   from {transform: translateX(-50%) scale(0.5);}
   to {transform: translateX(-50%) scale(1);}
+
+  
 `;
 
 const Ball = styled.div`
@@ -50,7 +48,6 @@ export function DrawSvg() {
   const BallRef = useRef(null);
 
   gsap.registerPlugin(ScrollTrigger);
-
   useLayoutEffect(() => {
     let element = ref.current;
 
@@ -58,10 +55,9 @@ export function DrawSvg() {
 
     const length = svg.getTotalLength();
 
-    //Start positioning of Svg Drawing
+    //start positioning of svg drawing
     svg.style.strokeDasharray = length;
-
-    //Hide svg before scrolling starts
+    //hide svg before scrolling start
     svg.style.strokeDashoffset = length;
 
     let t1 = gsap.timeline({
@@ -72,7 +68,7 @@ export function DrawSvg() {
         onUpdate: (self) => {
           const draw = length * self.progress;
 
-          // Also reverse the drawing when scrolling up
+          //also reverse the drawing when scroll goes up
           svg.style.strokeDashoffset = length - draw;
         },
         onToggle: (self) => {

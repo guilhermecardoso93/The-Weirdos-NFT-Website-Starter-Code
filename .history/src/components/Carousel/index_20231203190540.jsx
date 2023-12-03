@@ -38,21 +38,21 @@ export function Carousel() {
   return (
     <Container>
       <Swiper
-        autoplay={{
-          delay: 2000,
-          disableOnInteraction: false,
-        }}
-        pagination={{
-          type: "fraction",
-        }}
-        scrollbar={{
-          draggable: true,
-        }}
-        navigation={true}
-        effect={"cards"}
-        grabCursor={true}
-        modules={[EffectCards, Pagination, Navigation, Autoplay]}
-        className="mySwiper"
+       autoplay={{
+        delay: 2000,
+        disableOnInteraction: false,
+      }}
+      pagination={{
+        type: "fraction",
+      }}
+      scrollbar={{
+        draggable: true,
+      }}
+      navigation={true}
+      effect={"cards"}
+      grabCursor={true}
+      modules={[EffectCards, Pagination, Navigation, Autoplay]}
+      className="mySwiper"
       >
         {imagens.map((imagem, index) => (
           <SwiperSlide className="swiper" key={index}>
